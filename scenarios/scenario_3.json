@@ -1,0 +1,178 @@
+{
+  "id": "scenario_3",
+  "name": "Two operators",
+  "description": "kpn and srs each run 5 buses per direction on 15-minute headways from 19:00.",
+  "route": {
+    "segments": [
+      {
+        "from": "Bengaluru",
+        "to": "A",
+        "distance_km": 100
+      },
+      {
+        "from": "A",
+        "to": "B",
+        "distance_km": 120
+      },
+      {
+        "from": "B",
+        "to": "C",
+        "distance_km": 100
+      },
+      {
+        "from": "C",
+        "to": "D",
+        "distance_km": 120
+      },
+      {
+        "from": "D",
+        "to": "Kochi",
+        "distance_km": 100
+      }
+    ],
+    "charging_stations": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "chargers_per_station": {
+      "A": 1,
+      "B": 1,
+      "C": 1,
+      "D": 1
+    }
+  },
+  "physics": {
+    "battery_range_km": 240,
+    "charge_time_min": 25,
+    "speed_kmh": 60
+  },
+  "weights": {
+    "individual": 1.0,
+    "operator": 1.0,
+    "overall": 1.0
+  },
+  "buses": [
+    {
+      "id": "bus-BK-01",
+      "operator": "kpn",
+      "direction": "BK",
+      "departure_time": "19:00"
+    },
+    {
+      "id": "bus-BK-02",
+      "operator": "kpn",
+      "direction": "BK",
+      "departure_time": "19:15"
+    },
+    {
+      "id": "bus-BK-03",
+      "operator": "kpn",
+      "direction": "BK",
+      "departure_time": "19:30"
+    },
+    {
+      "id": "bus-BK-04",
+      "operator": "kpn",
+      "direction": "BK",
+      "departure_time": "19:45"
+    },
+    {
+      "id": "bus-BK-05",
+      "operator": "kpn",
+      "direction": "BK",
+      "departure_time": "20:00"
+    },
+    {
+      "id": "bus-BK-06",
+      "operator": "srs",
+      "direction": "BK",
+      "departure_time": "20:15"
+    },
+    {
+      "id": "bus-BK-07",
+      "operator": "srs",
+      "direction": "BK",
+      "departure_time": "20:30"
+    },
+    {
+      "id": "bus-BK-08",
+      "operator": "srs",
+      "direction": "BK",
+      "departure_time": "20:45"
+    },
+    {
+      "id": "bus-BK-09",
+      "operator": "srs",
+      "direction": "BK",
+      "departure_time": "21:00"
+    },
+    {
+      "id": "bus-BK-10",
+      "operator": "srs",
+      "direction": "BK",
+      "departure_time": "21:15"
+    },
+    {
+      "id": "bus-KB-01",
+      "operator": "kpn",
+      "direction": "KB",
+      "departure_time": "19:00"
+    },
+    {
+      "id": "bus-KB-02",
+      "operator": "kpn",
+      "direction": "KB",
+      "departure_time": "19:15"
+    },
+    {
+      "id": "bus-KB-03",
+      "operator": "kpn",
+      "direction": "KB",
+      "departure_time": "19:30"
+    },
+    {
+      "id": "bus-KB-04",
+      "operator": "kpn",
+      "direction": "KB",
+      "departure_time": "19:45"
+    },
+    {
+      "id": "bus-KB-05",
+      "operator": "kpn",
+      "direction": "KB",
+      "departure_time": "20:00"
+    },
+    {
+      "id": "bus-KB-06",
+      "operator": "srs",
+      "direction": "KB",
+      "departure_time": "20:15"
+    },
+    {
+      "id": "bus-KB-07",
+      "operator": "srs",
+      "direction": "KB",
+      "departure_time": "20:30"
+    },
+    {
+      "id": "bus-KB-08",
+      "operator": "srs",
+      "direction": "KB",
+      "departure_time": "20:45"
+    },
+    {
+      "id": "bus-KB-09",
+      "operator": "srs",
+      "direction": "KB",
+      "departure_time": "21:00"
+    },
+    {
+      "id": "bus-KB-10",
+      "operator": "srs",
+      "direction": "KB",
+      "departure_time": "21:15"
+    }
+  ]
+}
